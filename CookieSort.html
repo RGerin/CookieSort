@@ -27,6 +27,8 @@
 	}, {
 		"name" : "Fig Newton",
 		"shape" : "square"
+		
+		
 	}];
 
 	console.log(myCookies);
@@ -37,11 +39,23 @@
 	 * 
 	 */
 	for(var i=0; i<4; i++){
-	console.log(i);
-	var currentCookie = [i];
-	console.log (currentCookie);
-	
+	//console.log(i);
+	var currentCookie = myCookies[i];
+	//console.log (currentCookie);
+	if(currentCookie.shape == "square"){
 			
-	}
+	console.log(currentCookie);
+	
+	//Because shape is sqaure add currentCookie to myFaves list. Otherwise add currentCookie to theRest list.
+	myFaves.push(currentCookie);
+	
+	}else{
+			
+		theRest.push(currentCookie);
+	}//This the end of my if/else statement.
+	}//This is the end of my for loop.
+	console.log(myFaves);
+	console.log(theRest);
+	
 
 </script>
